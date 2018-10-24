@@ -2,8 +2,8 @@
 <h1><%= @user.name %></h1>
 
 <h1>What would you like to do?</h1>
-<%= link_to "View Playlists"%>
+<%= link_to "View Playlists", @playlists %>
 <%= link_to "Add Songs to Playlists" %>
-<%= link_to "Edit Profile"%>
-<%= link_to "Go to an Artist's page" %>
+<%= link_to "Edit Profile", edit_user_path%>
+<%= link_to "Search Artists" %>
 <%= link_to "Delete Profile" %>
