@@ -3,7 +3,10 @@ Rails.application.routes.draw do
   resources :artists
   resources :adds
   resources :songs
-  resources :playlists
-  resources :users
+
+  resources :users do
+    resources :playlists, only: [:index]
+  end
+  resources :playlists, except: [:index]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
