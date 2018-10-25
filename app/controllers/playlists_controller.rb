@@ -1,7 +1,9 @@
 class PlaylistsController < ApplicationController
 
   def index
-    @playlists = Playlist.all
+    # byebug
+    @user = User.find(params[:user_id])
+    @playlists = @user.playlists
   end
 
   def show
