@@ -8,7 +8,6 @@ class SessionsController < ApplicationController
       log_in(user)
       redirect_to user
     else 
-      # Todo: Display invalid username/password message
       render 'new'
     end
   end
