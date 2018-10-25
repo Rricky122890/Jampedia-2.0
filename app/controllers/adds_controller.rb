@@ -1,5 +1,4 @@
 class AddsController < ApplicationController
-
   def new
     @add = Add.new
   end
