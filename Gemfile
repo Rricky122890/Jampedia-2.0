@@ -7,7 +7,7 @@ ruby '2.3.3'
 gem 'rails', '~> 5.2.1'
 
 gem 'bcrypt', '3.1.12'
-gem 'bootstrap-sass', '3.3.7'
+
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
@@ -40,6 +40,9 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+
+gem "bootstrap"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -64,5 +67,3 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-gem 'bootstrap3-rails'

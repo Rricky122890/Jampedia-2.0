@@ -53,10 +53,10 @@ GEM
     bindex (0.5.0)
     bootsnap (1.3.2)
       msgpack (~> 1.0)
-
-    bootstrap3-rails (3.2.0)
-     rails (>= 4.0.0)
-
+    bootstrap (4.1.3)
+      autoprefixer-rails (>= 6.0.3)
+      popper_js (>= 1.12.9, < 2)
+      sass (>= 3.5.2)
     builder (3.2.3)
     byebug (10.0.2)
     capybara (3.10.0)
@@ -113,6 +113,7 @@ GEM
     nio4r (2.3.1)
     nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
+    popper_js (1.14.3)
     public_suffix (3.0.3)
     puma (3.12.0)
     rack (2.0.5)
@@ -203,9 +204,7 @@ PLATFORMS
 DEPENDENCIES
   bcrypt (= 3.1.12)
   bootsnap (>= 1.1.0)
-
-  bootstrap3-rails
-
+  bootstrap
   byebug
   capybara (>= 2.15)
   chromedriver-helper
@@ -228,6 +227,4 @@ RUBY VERSION
    ruby 2.3.3p222
 
 BUNDLED WITH
-
    1.16.5
-
