@@ -6,8 +6,6 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @playlists = Playlist.find_by(params[:user_id])
-    
-    # @playlists = @user.playlists
   end
 
   def new

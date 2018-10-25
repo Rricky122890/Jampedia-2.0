@@ -5,6 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+<<<<<<< HEAD
+=======
 
 # rico = User.create({name: "Rico"})
 # vicente = User.create({name: "Vicente"})
@@ -22,3 +24,4 @@
 # pop = Genre.create({name: "Pop"})
 # aloe_blacc = Artist.create({name: "Aloe Blacc"})
 # need_a_dollar = Song.create({title: "I Need a Dollar", artist_id: 9})
+>>>>>>> 1bf663b8b22173142b0e4071035442aabbebeea6
