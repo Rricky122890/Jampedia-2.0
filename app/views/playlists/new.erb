@@ -6,13 +6,10 @@
   <br>
 
   <br>
-  <%= f.text_field :user_id %>
+  <%= f.text_field :name %>
+  
   <br>
   <br>
   <%= f.submit "Create Playlist", :class => 'btn btn-primary'  %>
   <% end %>
 </div>
-
-<% @songs.each do |song| %>
-<h1><%= link_to song.title, user_playlists_path(@user.id) %></h1>
-<% end %>
