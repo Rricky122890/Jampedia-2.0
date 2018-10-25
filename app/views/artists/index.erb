@@ -1,6 +1,6 @@
 <h1>List of Artists</h1>
 <% @artists.each do |artist| %>
-<div> <img style="max-width: 100px;" src="<%=artist.image%>" alt="artits image">  <%= link_to artist.name, artist  %> </div>
+<div> <img style="max-width: 100px;" src="<%=artist.image%>" alt="artist image">  <%= link_to artist.name, artist  %> </div>
 <br>
 <%end%>
 
