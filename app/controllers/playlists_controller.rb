@@ -1,6 +1,7 @@
 class PlaylistsController < ApplicationController
 
   def index
+
     @user = User.find(params[:user_id])
     @playlists = @user.playlists
   end
@@ -11,11 +12,14 @@ class PlaylistsController < ApplicationController
 
   def new
     @playlist = Playlist.new
+    # byebug
     @songs = Song.all
   end
 
   def create
+    byebug
     @playlist = Playlist.new(playlist_params)
+    @playlist.user_id = session[:user_id]
     if @playlist.valid?
       @playlist.save
       redirect_to @playlist
@@ -27,7 +31,7 @@ class PlaylistsController < ApplicationController
   private
 
   def playlist_params
-    params.require(:playlist).permit(:name, :user_id)
+    params.require(:playlist).permit(:name)
   end
 
 end
