@@ -10,8 +10,13 @@
   </head>
 
   <body>
-    <nav>
-      <%= link_to "Log out", logout_path, method: :delete %>
+
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <%=link_to "JamPedia", login_path   %>
+        </div>
+      </div>
     </nav>
     <%= yield %>
   </body>
