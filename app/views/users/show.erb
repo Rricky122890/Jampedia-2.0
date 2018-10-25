@@ -1,9 +1,19 @@
+<style>
+a {margin-left: 35%;
+font-size: 30px
+}
+
+</style>
 
 <h1><%= @user.name %></h1>
 
-<h1>What would you like to do?</h1>
-<%= link_to "View Playlists", @playlists %>
-<%= link_to "Add Songs to Playlists" %>
-<%= link_to "Edit Profile", edit_user_path%>
-<%= link_to "Search Artists", artists_path  %>
-<%= link_to "Delete Profile" %>
+<h1 style="text-align: center">What would you like to do?</h1>
+<div style="width: 60%; margin: auto" class="jumbotron jumbotron-fluid">
+ <%= link_to " Create a Playlist", new_playlist_path, class: "fa fa-list"  %>  <br>
+<%= link_to " View Playlists", @playlists, class: "fa fa-eye" %><br>
+<%= link_to " Add Songs to Playlists", nil, class: "fa fa-plus" %><br>
+<%= link_to " Edit Profile", edit_user_path, class: "fa fa-pencil"%><br>
+<%= link_to " Search Artists", artists_path, class: "fa fa-music"  %><br>
+
+<%= link_to "Delete Profile", nil, class: "fa fa-trash" %>
+</div>
