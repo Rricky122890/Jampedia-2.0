@@ -19,7 +19,6 @@ class UsersController < ApplicationController
     else
       render 'new'
     end
-
   end
 
   def edit
@@ -30,7 +29,6 @@ class UsersController < ApplicationController
     @user = User.update(params[:id])
     @user.update(user_params)
   end
-
 
   private
 
