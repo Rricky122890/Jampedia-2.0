@@ -4,4 +4,10 @@ class Playlist < ApplicationRecord
   has_many :songs, through: :adds
 
   validates :name, presence: true  
+
+  def add(song)
+    self.songs << song 
+  end
 end
+
+
