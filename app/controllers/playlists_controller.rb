@@ -1,6 +1,7 @@
 class PlaylistsController < ApplicationController
 
   def index
+    # byebug
     @user = User.find(params[:user_id])
     @playlists = @user.playlists
   end
@@ -11,7 +12,6 @@ class PlaylistsController < ApplicationController
 
   def new
     @playlist = Playlist.new
-    @songs = Song.all
   end
 
   def create
