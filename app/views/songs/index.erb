@@ -1,4 +1,8 @@
 Every Song
 <% @songs.each do |song| %>
-<%= song.name %>
+<h1><%= link_to song.artist.name, artist_path(song.artist.id) %> - <%=song.title %></h1>
+<% end %>
+<%= form_for @add do |f| %>
+<%= f.collection_select :song_id, @songs, :id, :title %> 
+<%= f.submit %>
 <% end %>
